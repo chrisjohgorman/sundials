@@ -25,6 +25,7 @@ build() {
     -DENABLE_OPENMP=ON \
     -DENABLE_KLU=ON \
     -DKLU_LIBRARY_DIR=/usr/lib \
+    -DKLU_INCLUDE_DIR=/usr/include/suitesparse \
     -DEXAMPLES_INSTALL_PATH=/usr/share/sundials/examples
   cmake --build build
 }
